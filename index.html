@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giant Magellan Telescope</title>
+    <meta property="og:type" content="Website"/>
+	<meta property="og:title" content="Giant Magellan Telescope"/>
+	<!-- <meta property="og:url" content=""/> 추후 추가 -->
+	<meta property="og:description" content="Giant Magellan Telescope | The Giant Magellan Telescope is the most powerful telescope on Earth. It is designed to discover the unknown. The Universe Awaits."/>
+	<meta property="og:image" content="./assets/images/site_image.jpeg">
+	<meta property="og:site_name" content="Giant Magellan Telescope"/>
+    <link rel="icon" href="./assets/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="./assets/images/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./assets/images/avicon-180x180.png">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="hidden">
+    <div class="loading-screen">
+        <div class="loading-icon">
+            <svg width="81" height="87" viewBox="0 0 81 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs><linearGradient id="paint0_linear" x1="80.2105" y1="0" x2="-8.92356" y2="11.4443" gradientUnits="userSpaceOnUse"> <stop stop-color="#DDE4FF"></stop> <stop offset="1" stop-color="#EDE2FF"></stop> </linearGradient> </defs>
+                <path d="M40.4929 27.5427C48.1076 27.5427 54.2806 21.3771 54.2806 13.7714C54.2806 6.16565 48.1076 0 40.4929 0C32.8781 0 26.7052 6.16565 26.7052 13.7714C26.7052 21.3771 32.8781 27.5427 40.4929 27.5427Z" fill="url(#paint0_linear)"></path> <path d="M40.4929 86.9997C48.1076 86.9997 54.2806 80.8341 54.2806 73.2284C54.2806 65.6227 48.1076 59.457 40.4929 59.457C32.8781 59.457 26.7052 65.6227 26.7052 73.2284C26.7052 80.8341 32.8781 86.9997 40.4929 86.9997Z" fill="url(#paint0_linear)"></path> <path d="M28.3893 27.3084C29.166 34.8745 23.6547 41.637 16.0796 42.4128C8.50443 43.1886 1.73391 37.6839 0.957211 30.1177C0.180506 22.5516 5.69174 15.7891 13.2669 15.0133C20.842 14.2375 27.6126 19.7422 28.3893 27.3084Z" fill="url(#paint0_linear)"></path> <path d="M71.5564 71.0228C78.6008 68.1342 81.9669 60.0886 79.0748 53.0526C76.1828 46.0166 68.1276 42.6544 61.0832 45.5431C54.0388 48.4317 50.6727 56.4773 53.5648 63.5133C56.4569 70.5494 64.512 73.9115 71.5564 71.0228Z" fill="url(#paint0_linear)"></path> <path d="M27.582 53.5441C30.0995 60.7224 26.3142 68.5799 19.1274 71.0943C11.9406 73.6088 4.07378 69.828 1.55635 62.6497C-0.961087 55.4715 2.82418 47.614 10.011 45.0995C17.1978 42.5851 25.0646 46.3659 27.582 53.5441Z" fill="url(#paint0_linear)"></path> <path d="M72.4632 41.2819C79.3073 37.9483 82.15 29.7042 78.8124 22.8682C75.4749 16.0322 67.221 13.1929 60.3769 16.5265C53.5327 19.8601 50.6901 28.1042 54.0276 34.9402C57.3652 41.7762 65.619 44.6155 72.4632 41.2819Z" fill="url(#paint0_linear)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M26.7052 43.5018C26.7052 35.8948 32.8768 29.7305 40.4929 29.7305C48.109 29.7305 54.2806 35.8948 54.2806 43.5018C54.2806 51.1089 48.109 57.2732 40.4929 57.2732C32.8768 57.2732 26.7052 51.1089 26.7052 43.5018ZM35.6781 43.5018C35.6781 46.1599 37.8316 48.3109 40.4929 48.3109C43.1541 48.3109 45.3076 46.1599 45.3076 43.5018C45.3076 40.8437 43.1541 38.6928 40.4929 38.6928C37.8316 38.6928 35.6781 40.8437 35.6781 43.5018Z" fill="url(#paint0_linear)"></path>
+            </svg>
+        </div>
+        <div class="loading-text">THE UNIVERSE AWAITS™</div>
+    </div>
+    <header id="header">
+        <div class="header_bg"></div>
+        <div class="body_bg">
+            <div class="col-left"></div>
+            <div class="col-mid"></div>
+            <div class="col-right"></div>
+        </div>
+        <div class="inner">
+            <h1 class="logo"><a href=""><svg width="143" height="36" viewBox="0 0 143 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill="url(#a)" d="M16.351 11.429c3.143 0 5.7-2.558 5.7-5.718A5.711 5.711 0 0 0 16.427 0h-.152c-3.11.042-5.617 2.585-5.617 5.71 0 3.161 2.55 5.719 5.693 5.719Zm83.212 15.944h6.028v-1.856h-3.905v-1.403h3.821v-1.849h-3.821v-1.289h3.905V19.12h-6.028v8.253Zm-4.094-4.629h-1.713V20.98h1.713c.566 0 .985.323.985.889 0 .553-.419.876-.985.876Zm.288-3.624h-4.122v8.253h2.124v-2.772h1.998c1.85 0 2.857-1.247 2.857-2.733-.002-1.499-1.007-2.748-2.857-2.748Zm-9.585 6.523c-1.37 0-2.242-1.06-2.242-2.39 0-1.353.872-2.39 2.242-2.39 1.354 0 2.234 1.037 2.234 2.39.002 1.333-.88 2.39-2.234 2.39Zm0-6.654c-2.516 0-4.4 1.75-4.4 4.266 0 2.509 1.887 4.267 4.4 4.267 2.512 0 4.392-1.758 4.392-4.267.002-2.516-1.877-4.266-4.392-4.266Zm-8.48 1.876c.789 0 1.488.546 1.762 1.198l1.823-.862c-.537-1.094-1.599-2.215-3.585-2.215-2.527 0-4.456 1.716-4.456 4.267 0 2.535 1.929 4.266 4.456 4.266 1.984 0 3.053-1.148 3.585-2.215l-1.823-.869c-.274.66-.97 1.205-1.761 1.205-1.348 0-2.299-1.044-2.299-2.39 0-1.348.951-2.385 2.298-2.385Zm-8.25 1.262c-.788-.183-1.418-.324-1.418-.714 0-.35.273-.595.886-.595.81 0 1.713.287 2.402.855l1.16-1.521c-.871-.756-2.017-1.156-3.337-1.156-2.11 0-3.284 1.24-3.284 2.627 0 2.025 1.9 2.398 3.254 2.67.788.16 1.404.293 1.404.727 0 .4-.44.68-1.168.68a3.686 3.686 0 0 1-2.625-1.087l-1.126 1.598c.825.792 1.983 1.31 3.646 1.31 2.214 0 3.429-1.1 3.429-2.76.005-1.94-1.865-2.348-3.223-2.634Zm-10.518 5.246h6.028v-1.856h-3.905v-1.403h3.821v-1.849h-3.82v-1.289h3.904V19.12h-6.028v8.253Zm-4.4-8.253h-2.123v8.253h5.426v-1.856h-3.303V19.12Zm-9.388 8.253h6.035v-1.856H47.26v-1.403h3.82v-1.849h-3.82v-1.289h3.911V19.12h-6.035v8.253Zm-7.725-6.397h2.306v6.397h2.116v-6.397h2.298V19.12h-6.72v1.856ZM140.872 7.064v4.54l-3.333-4.54h-2.181v8.254h2.117v-4.78l3.478 4.777H143V7.064h-2.128Zm-11.603 5.204 1.047-3.103 1.047 3.103h-2.094Zm-.286-5.204-3.094 8.254h2.402l.411-1.19h3.242l.404 1.19h2.402l-3.106-8.254h-2.661Zm-6.621 0h-2.117v8.254h5.42V13.46h-3.303V7.064Zm-6.526 0h-2.116v8.254h5.427V13.46h-3.311V7.064Zm-9.381 8.254h6.028V13.46h-3.904v-1.403h3.82v-1.856h-3.82V8.92h3.904V7.064h-6.028v8.254Zm-4.882.145c1.549 0 2.751-.63 3.638-1.612v-3.279h-3.973v1.872h1.85v.644c-.291.244-.907.491-1.515.491-1.34 0-2.291-1.037-2.291-2.382 0-1.353.951-2.39 2.291-2.39.803 0 1.431.503 1.739 1.052l1.774-.926c-.567-1.03-1.678-2.005-3.513-2.005-2.451 0-4.45 1.64-4.45 4.266 0 2.622 1.999 4.27 4.45 4.27Zm-9.728-3.195 1.047-3.103 1.047 3.103h-2.094Zm3.086 3.05h2.402l-3.109-8.254h-2.66l-3.101 8.254h2.409l.404-1.19h3.242l.413 1.19ZM80.65 9.943l2.074 5.375h.936l2.081-5.375v5.375h2.124V7.064h-2.949l-1.724 4.476-1.712-4.476H78.53v8.254h2.116V9.943h.003Zm-10.701 5.375h2.123V8.92h2.291V7.064h-6.72V8.92h2.306v6.398Zm-8.844-4.78 3.478 4.777h2.047V7.064H64.5v4.54l-3.333-4.54h-2.18v8.254H61.1v-4.78h.003Zm-8.208 1.73 1.047-3.103 1.047 3.103h-2.094Zm-.286-5.204-3.094 8.254h2.402l.411-1.19h3.242l.404 1.19h2.402l-3.1-8.254H52.61Zm-5.819 8.254h2.124V7.064h-2.123v8.254Zm-4.882.145c1.55 0 2.752-.63 3.638-1.612v-3.279h-3.973v1.872h1.85v.644c-.293.244-.907.491-1.515.491-1.34 0-2.291-1.037-2.291-2.382 0-1.353.95-2.39 2.291-2.39.803 0 1.431.503 1.74 1.052l1.773-.926c-.567-1.03-1.678-2.005-3.513-2.005-2.451 0-4.449 1.64-4.449 4.266 0 2.622 1.998 4.27 4.449 4.27ZM24.091 6.977a5.725 5.725 0 0 0-2.089 7.805 5.688 5.688 0 0 0 7.782 2.088 5.725 5.725 0 0 0 2.089-7.804 5.69 5.69 0 0 0-7.782-2.089Zm-13.438 14.38a5.69 5.69 0 0 0-7.782-2.097A5.727 5.727 0 0 0 .79 27.067a5.69 5.69 0 0 0 7.782 2.096c2.722-1.577 3.653-5.076 2.081-7.806Zm19.109-2.139a5.689 5.689 0 0 0-7.782 2.097c-1.572 2.733-.643 6.229 2.082 7.804a5.689 5.689 0 0 0 7.781-2.096 5.725 5.725 0 0 0-2.081-7.805Zm-26.913-2.39a5.686 5.686 0 0 0 7.782-2.088c1.572-2.733.636-6.23-2.089-7.805a5.687 5.687 0 0 0-7.78 2.09c-1.571 2.732-.635 6.228 2.087 7.803Zm15.396 1.255a1.897 1.897 0 0 1-1.892 1.898 1.897 1.897 0 0 1-1.891-1.898 1.892 1.892 0 1 1 3.783 0Zm-7.587-.077c0 3.153 2.55 5.71 5.693 5.71s5.7-2.557 5.7-5.71c0-3.16-2.557-5.718-5.7-5.718-3.143 0-5.693 2.558-5.693 5.718Zm5.693 6.565c-3.143 0-5.693 2.558-5.693 5.718 0 3.153 2.55 5.711 5.693 5.711s5.7-2.558 5.7-5.71c0-3.161-2.557-5.719-5.7-5.719Z"></path> <defs><linearGradient id="a" x1="143" y1="0" x2="18.681" y2="69.444" gradientUnits="userSpaceOnUse"><stop stop-color="#dbf8ff"></stop><stop offset=".531" stop-color="#dde4ff"></stop><stop offset="1" stop-color="#fee2ff"></stop></linearGradient></defs> </svg> </a> </h1>
+            <div class="nav-area pc">
+                <ul class="main-menu">
+                    <li>
+                        <a href="">TELESCOPE</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Explore the Design</a></li>
+                            <li><a href="">Location</a></li>
+                            <li><a href="">Scientific Instruments</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">TIMELINE</a>
+                    </li>
+                    <li>
+                        <a href="">GALLERY</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Telescope Renderings</a></li>
+                            <li><a href="">Construction Site</a></li>
+                            <li><a href="">Primary Mirrors</a></li>
+                            <li><a href="">Telescope Mount</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">PARTNERS</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Founders</a></li>
+                            <li><a href="">US-ELTP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">ABOUT</a>
+                        <ul class="sub-menu">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Leadership</a></li>
+                            <li><a href="">Social Impact</a></li>
+                            <li><a href="">Employment</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">NEWS & EVENTS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-area moblie">
+                <div class="moblie-menu">
+                    <div class="icons">
+                        <div class="icon"><span></span><span></span></div>
+                    </div>
+                    <div class="labels">
+                        <div class="menu">MENU</div>
+                        <div class="menu hide">CLOSE MENU</div>
+                    </div>
+                </div>
+                <div class="main-menu-wrap">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="">TELESCOPE</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Explore the Design</a></li>
+                                <li><a href="">Location</a></li>
+                                <li><a href="">Scientific Instruments</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">TIMELINE</a>
+                        </li>
+                        <li>
+                            <a href="">GALLERY</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Telescope Renderings</a></li>
+                                <li><a href="">Construction Site</a></li>
+                                <li><a href="">Primary Mirrors</a></li>
+                                <li><a href="">Telescope Mount</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">PARTNERS</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Founders</a></li>
+                                <li><a href="">US-ELTP</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">ABOUT</a>
+                            <ul class="sub-menu">
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Leadership</a></li>
+                                <li><a href="">Social Impact</a></li>
+                                <li><a href="">Employment</a></li>
+                                <li><a href="">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">NEWS & EVENTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="add-area">
+                <div class="lang-wrap">
+                    <div class="lang-box en">
+                        <div class="lang-en">EN</div>
+                        <button class="btn-open icon-open"></button>
+                    </div>
+                    <div class="lang-box es">
+                        <div class="lang-es"><a href="">ES</a></div>
+                    </div>
+                </div>
+                <a href="" class="link">FOR SCIENTISTS</a>
+            </div>
+        </div>
+    </header>
+    <main id="container">
+        <div class="sticky-wrapper">
+            <div class="sticky-content"></div>
+
+            <!-- sc-visual -->
+            <section class="sc-visual scroll-section">
+                <h2 class="title-area">
+                    <div class="text-box"><span class="desc one">The Universe Awaits™</span></div>
+                    <div class="text-box"><span class="headline two">GIANT MAGELLAN</span></div>
+                    <div class="text-box"><span class="headline three">TELESCOPE</span></div>
+                </h2>
+  
+                <div class="contents">
+                    <div class="text-area">
+                        <p>Giant Magellan is the most powerful telescope on Earth. It is designed to discover the unknown. With unmatched image quality, seven of the world’s largest mirrors will launch our view into the Universe to…</p>
+                    </div>
+                    <div class="text-area">
+                        <p>Find Earth-like planets and search for signs of life...</p>
+                    </div>
+                    <div class="text-area">
+                        <p>Investigate the cosmic origins of chemical elements and unlock the mysteries of dark matter and energy...</p>
+                    </div>
+                    <div class="text-area">
+                        <p>Peer back in time to explore the formation of the first stars, galaxies, and black holes.</p>
+                    </div>
+                </div>
+
+                <div class="popup-wrap">
+                    <button class="popup-open">Read Video Transcript</button>
+                    <div class="popup-view">
+                        <p>The background animation starts with a black background that transitions the Giant Magellan Telescope's enclosure doors from their closed state, opening up to show its interior, with the telescope mount front and center against the Atacama Desert background. As you scroll further, the animation dives into a primary mirror, taking us to a view of the night sky—slowly zooming into it before animating further to show a planetary system with a gas giant on the left, a star in the center, and an Earth-like planet on the right that takes center stage as the page is scrolled down. The planet is rapidly zoomed out when scrolled further to show an animated section of the night sky, with multiple galaxies visible. The galaxies are moved out of view to show a colorful gas cloud before zooming back out of the Giant Magellan Telescope's primary mirror. The telescope's whole structure (the Enclosure) is now visible face-on.</p>
+                        <button class="popup-close">Close</button>
+                    </div>
+                </div>
+                <div class="scroll-wrap icon-arrow">
+                    <div class="text">SCROLL</div>
+                </div>
+            </section>
+
+            <!-- sc-tech -->
+            <section class="sc-tech">
+                <div class="inner">
+                    <div class="col-left">
+                        <h2 class="headline">Powerful by <br>Design</h2>
+                        <ul>
+                            <li>
+                                <strong class="title">Better Vision</strong>
+                                <p class="desc">Using seven of the world’s largest mirrors, the Giant Magellan Telescope will have 50 million times the light gathering power of the human eye and will be up to 200 times more powerful than today’s best telescopes.</p>
+                            </li>
+                            <li>
+                                <strong class="title">Unrivaled Technology</strong>
+                                <p class="desc">The Giant Magellan Telescope will remove the blurring effect of Earth’s atmospheric turbulence with an advanced pre-focal adaptive optics system, yielding 4 to 10 times the resolution of today’s best space-based telescopes.</p>
+                            </li>
+                            <li>
+                                <strong class="title">Clever Engineering</strong>
+                                <p class="desc">The Giant Magellan Telescope will produce the highest possible image resolution of the Universe over the widest field of view with only two light collecting surfaces, making it the most optically proficient of all telescopes in the 30-meter-class.</p>
+                            </li>
+                            <li>
+                                <strong class="title">New Capabilities</strong>
+                                <p class="desc">The Giant Magellan Telescope will hunt for habitable planets and determine whether molecules in the atmosphere are created by life, a capability that today’s telescopes are unable to measure in the visible spectrum because of a lack of sensitivity and resolution.</p>
+                            </li>
+                        </ul>
+                        <div class="link-wrap icon-arrow">
+                            <a href="" class="link">EXPLORE THE TELESCOPE DESIGN</a>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="tech_bg"></div>
+            </section>
+        </div>
+
+        <!-- sc-size -->
+        <section class="sc-size">
+            <h2 class="headline">A Giant Leap<br>in Size</h2>
+            <div class="inner">
+                <div class="chart">
+                    <ul class="chart-lines">
+                        <li class="chart-line"></li>
+                        <li class="chart-line"></li>
+                        <li class="chart-line"></li>
+                        <li class="chart-line"></li>
+                        <li class="chart-line"></li>
+                        <li class="chart-line"></li>
+                    </ul>
+                    <div class="chart-contents">
+                        <div class="chart-content content-bw">
+                            <div class="content-inner">
+                                <div class="text">24m</div>
+                                <img src="./assets/images/sc-size_BlueWhale.svg" alt="Blue Whale">
+                            </div>
+                        </div>
+                        <div class="chart-content content-ss">
+                            <div class="content-inner">
+                                <div class="text">37m</div>
+                                <img src="./assets/images/sc-size_SpaceShuttle.svg" alt="Space Shuttle">
+                            </div>
+                        </div>
+                        <div class="chart-content content-gmt">
+                            <div class="content-inner">
+                                <div class="text">65m (4 times the size of today's telescopes)</div>
+                                <img src="./assets/images/sc-size_GinatMagellan.svg" alt="_Ginat Magellan Telescopes">
+                            </div>
+                        </div>
+                        <div class="chart-content content-tmt">
+                            <div class="content-inner">
+                                <div class="text">20m</div>
+                                <img src="./assets/images/sc-size_TwinMagellan.svg" alt="Twin Magellan Telescopes">
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="chart-labels label-x">
+                        <li class="chart-label content-bw">Blue Whale</li>
+                        <li class="chart-label content-ss">Space Shuttle</li>
+                        <li class="chart-label content-gmt">Giant Magellan Telescope</li>
+                        <li class="chart-label content-tmt">Twin Magellan Telescopes</li>
+                    </ul>
+                    <ul class="chart-labels label-y">
+                        <li class="chart-label">Height, m</li>
+                        <li class="chart-label">50</li>
+                        <li class="chart-label">30</li>
+                        <li class="chart-label">10</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="view-helper">
+                <img class="helper-line" src="./assets/images/helper-img.svg" alt width="336" height="8" role="presentation">
+                <div class="helper-box">
+                    <div class="helper-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.667 17.3333V6C11.667 5.46957 11.8777 4.96086 12.2528 4.58579C12.6279 4.21071 13.1366 4 13.667 4C14.1974 4 14.7061 4.21071 15.0812 4.58579C15.4563 4.96086 15.667 5.46957 15.667 6V16" stroke="#525AA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M15.667 15.3337V12.667C15.667 12.4043 15.7187 12.1443 15.8192 11.9016C15.9197 11.659 16.0671 11.4385 16.2528 11.2528C16.4385 11.0671 16.659 10.9197 16.9016 10.8192C17.1443 10.7187 17.4043 10.667 17.667 10.667C17.9296 10.667 18.1897 10.7187 18.4324 10.8192C18.675 10.9197 18.8955 11.0671 19.0812 11.2528C19.2669 11.4385 19.4142 11.659 19.5148 11.9016C19.6153 12.1443 19.667 12.4043 19.667 12.667V16.0003" stroke="#525AA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M19.667 14C19.667 13.4696 19.8777 12.9609 20.2528 12.5858C20.6279 12.2107 21.1366 12 21.667 12C22.1974 12 22.7061 12.2107 23.0812 12.5858C23.4563 12.9609 23.667 13.4696 23.667 14V16" stroke="#525AA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M23.6669 15.333C23.6669 14.8026 23.8776 14.2939 24.2527 13.9188C24.6278 13.5437 25.1365 13.333 25.6669 13.333C26.1973 13.333 26.7061 13.5437 27.0811 13.9188C27.4562 14.2939 27.6669 14.8026 27.6669 15.333V21.333C27.6669 23.4547 26.8241 25.4896 25.3238 26.9899C23.8235 28.4902 21.7886 29.333 19.6669 29.333H17.0002H17.2776C15.9527 29.3332 14.6485 29.0044 13.4821 28.3761C12.3157 27.7477 11.3236 26.8395 10.5949 25.733C10.5075 25.5999 10.4203 25.4666 10.3336 25.333C9.91758 24.6943 8.45758 22.149 5.95224 17.6957C5.69684 17.2417 5.62862 16.706 5.76209 16.2025C5.89555 15.6991 6.22018 15.2675 6.66691 14.9997C7.14275 14.7142 7.70034 14.5958 8.25112 14.6635C8.80191 14.7311 9.3143 14.9808 9.70691 15.373L11.6669 17.333" stroke="#525AA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                    <div class="helper-text">Swipe to explore<br>map</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sc-global -->
+        <section class="sc-global">
+            <div class="img-area">
+                <div class="inner">
+                    <img src="./assets/images/sc_global.png" alt="세계 지도">
+                </div>
+                <div class="view-helper">
+                    <img class="helper-line" src="./assets/images/helper-img.svg" alt width="336" height="8" role="presentation">
+                    <div class="helper-box">
+                        <div class="helper-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.667 17.3333V6C11.667 5.46957 11.8777 4.96086 12.2528 4.58579C12.6279 4.21071 13.1366 4 13.667 4C14.1974 4 14.7061 4.21071 15.0812 4.58579C15.4563 4.96086 15.667 5.46957 15.667 6V16" stroke="#525AA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M15.667 15.3337V12.667C15.667 12.4043 15.7187 12.1443 15.8192 11.9016C15.9197 11.659 16.0671 11.4385 16.2528 11.2528C16.4385 11.0671 16.659 10.9197 16.9016 10.8192C17.1443 10.7187 17.4043 10.667 17.667 10.667C17.9296 10.667 18.1897 10.7187 18.4324 10.8192C18.675 10.9197 18.8955 11.0671 19.0812 11.2528C19.2669 11.4385 19.4142 11.659 19.5148 11.9016C19.6153 12.1443 19.667 12.4043 19.667 12.667V16.0003" stroke="#525AA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M19.667 14C19.667 13.4696 19.8777 12.9609 20.2528 12.5858C20.6279 12.2107 21.1366 12 21.667 12C22.1974 12 22.7061 12.2107 23.0812 12.5858C23.4563 12.9609 23.667 13.4696 23.667 14V16" stroke="#525AA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M23.6669 15.333C23.6669 14.8026 23.8776 14.2939 24.2527 13.9188C24.6278 13.5437 25.1365 13.333 25.6669 13.333C26.1973 13.333 26.7061 13.5437 27.0811 13.9188C27.4562 14.2939 27.6669 14.8026 27.6669 15.333V21.333C27.6669 23.4547 26.8241 25.4896 25.3238 26.9899C23.8235 28.4902 21.7886 29.333 19.6669 29.333H17.0002H17.2776C15.9527 29.3332 14.6485 29.0044 13.4821 28.3761C12.3157 27.7477 11.3236 26.8395 10.5949 25.733C10.5075 25.5999 10.4203 25.4666 10.3336 25.333C9.91758 24.6943 8.45758 22.149 5.95224 17.6957C5.69684 17.2417 5.62862 16.706 5.76209 16.2025C5.89555 15.6991 6.22018 15.2675 6.66691 14.9997C7.14275 14.7142 7.70034 14.5958 8.25112 14.6635C8.80191 14.7311 9.3143 14.9808 9.70691 15.373L11.6669 17.333" stroke="#525AA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="helper-text">Swipe to explore<br>map</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-area">
+                <h2 class="headline">Global Endeavor</h2>
+                <p class="desc">The Giant Magellan Telescope is the work of an international consortium of 14 research institutions representing Australia, Brazil, Chile, Israel, South Korea, Taiwan, and the United States. The telescope is under construction in the Chilean Atacama Desert, one of the best locations on Earth to explore the heavens.</p>
+                <div class="link-wrap">
+                    <a href="" class="link">
+                        <span class="icon-arrow"></span>
+                        <span class="text">Learn more about our international consortium</span>
+                    </a>
+                    <a href="" class="link"> 
+                        <span class="icon-arrow"></span>
+                        <span class="text">Discover what’s special about our location</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="footer-top">
+                <div class="col-left">
+                    <div class="nav-wrap">
+                        <ul class="main-menu">
+                            <li>
+                                <a href="">TELESCOPE</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Explore the Design</a></li>
+                                    <li><a href="">Location</a></li>
+                                    <li><a href="">Scientific Instruments</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">TIMELINE</a>
+                            </li>
+                            <li>
+                                <a href="">GALLERY</a>
+                                <ul class="sub-menu">
+                                    <li><a href=""></a></li>
+                                    <li><a href="">Telescope Renderings</a></li>
+                                    <li><a href="">Construction Site</a></li>
+                                    <li><a href="">Primary Mirrors</a></li>
+                                    <li><a href="">Telescope Mount</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-wrap">
+                        <ul class="main-menu">
+                            <li>
+                                <a href="">PARTNERS</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Founders</a></li>
+                                    <li><a href="">US-ELTP</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">ABOUT</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Leadership</a></li>
+                                    <li><a href="">Social Impact</a></li>
+                                    <li><a href="">Employment</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">NEWS & EVENTS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="container">
+                        <a href="" class="link">FOR SCICENTISTS<span class="icon-right"></span></a>
+                        <div class="sns-area">
+                            <strong class="title">FOLLOW THE BUILD</strong>
+                            <ul>
+                                <li class="sns-item"><a href=""><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path d="M9.9975 6.66525C8.16126 6.66525 6.66274 8.16376 6.66274 10C6.66274 11.8362 8.16126 13.3348 9.9975 13.3348C11.8337 13.3348 13.3323 11.8362 13.3323 10C13.3323 8.16376 11.8337 6.66525 9.9975 6.66525ZM19.9993 10C19.9993 8.61907 20.0118 7.25064 19.9342 5.87221C19.8567 4.27113 19.4914 2.85017 18.3206 1.67938C17.1473 0.506085 15.7289 0.14334 14.1278 0.065788C12.7469 -0.0117644 11.3784 0.000744113 10 0.000744113C8.61907 0.000744113 7.25064 -0.0117644 5.87221 0.065788C4.27113 0.14334 2.85017 0.508587 1.67938 1.67938C0.506085 2.85267 0.14334 4.27113 0.065788 5.87221C-0.0117644 7.25314 0.000744113 8.62157 0.000744113 10C0.000744113 11.3784 -0.0117644 12.7494 0.065788 14.1278C0.14334 15.7289 0.508587 17.1498 1.67938 18.3206C2.85267 19.4939 4.27113 19.8567 5.87221 19.9342C7.25314 20.0118 8.62157 19.9993 10 19.9993C11.3809 19.9993 12.7494 20.0118 14.1278 19.9342C15.7289 19.8567 17.1498 19.4914 18.3206 18.3206C19.4939 17.1473 19.8567 15.7289 19.9342 14.1278C20.0143 12.7494 19.9993 11.3809 19.9993 10ZM9.9975 15.131C7.15808 15.131 4.86653 12.8394 4.86653 10C4.86653 7.16058 7.15808 4.86903 9.9975 4.86903C12.8369 4.86903 15.1285 7.16058 15.1285 10C15.1285 12.8394 12.8369 15.131 9.9975 15.131ZM15.3386 5.8572C14.6757 5.8572 14.1403 5.32184 14.1403 4.65889C14.1403 3.99594 14.6757 3.46058 15.3386 3.46058C16.0016 3.46058 16.5369 3.99594 16.5369 4.65889C16.5371 4.81631 16.5063 4.97222 16.4461 5.1177C16.386 5.26317 16.2977 5.39535 16.1864 5.50666C16.0751 5.61798 15.9429 5.70624 15.7974 5.76639C15.6519 5.82654 15.496 5.8574 15.3386 5.8572Z"></path> </svg></a></li>
+                                <li class="sns-item"><a href=""><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path d="M17.8571 0H2.14286C1.57454 0 1.02949 0.225765 0.627628 0.627628C0.225765 1.02949 0 1.57454 0 2.14286L0 17.8571C0 18.4255 0.225765 18.9705 0.627628 19.3724C1.02949 19.7742 1.57454 20 2.14286 20H8.27009V13.2004H5.45759V10H8.27009V7.56071C8.27009 4.78616 9.92188 3.25357 12.4518 3.25357C13.6634 3.25357 14.9304 3.46964 14.9304 3.46964V6.19286H13.5344C12.1589 6.19286 11.7299 7.04643 11.7299 7.92188V10H14.8004L14.3094 13.2004H11.7299V20H17.8571C18.4255 20 18.9705 19.7742 19.3724 19.3724C19.7742 18.9705 20 18.4255 20 17.8571V2.14286C20 1.57454 19.7742 1.02949 19.3724 0.627628C18.9705 0.225765 18.4255 0 17.8571 0Z"></path> </svg></a></li>
+                                <li class="sns-item"><a href=""><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path class="st0" d="M12.2,23.7L12.2,23.7c-3.5,0-6.2-1.2-8-3.4c-1.6-2-2.4-4.8-2.5-8.3v0c0-3.5,0.9-6.3,2.5-8.3 c1.8-2.3,4.5-3.4,8-3.4h0h0c2.7,0,4.9,0.7,6.7,2.1c1.6,1.3,2.8,3.1,3.4,5.3l-2,0.6c-1.1-3.9-3.8-5.9-8.1-5.9c-2.8,0-5,0.9-6.4,2.7 c-1.3,1.6-2,4-2,7c0,3,0.7,5.4,2,7c1.4,1.7,3.6,2.6,6.4,2.7c2.6,0,4.3-0.6,5.7-2c1.6-1.6,1.6-3.5,1.1-4.7c-0.3-0.7-0.9-1.3-1.6-1.7 c-0.2,1.3-0.6,2.4-1.3,3.2c-0.9,1.1-2.1,1.7-3.6,1.8c-1.2,0.1-2.3-0.2-3.2-0.8c-1-0.7-1.6-1.7-1.7-2.9c-0.1-1.2,0.4-2.2,1.3-3 c0.9-0.7,2.1-1.2,3.5-1.3c1.1-0.1,2,0,3,0.1c-0.1-0.7-0.4-1.3-0.7-1.7c-0.5-0.6-1.3-0.9-2.3-0.9c0,0,0,0,0,0 c-0.8,0-1.9,0.2-2.7,1.3L7.8,7.9c1-1.4,2.5-2.2,4.4-2.2c0,0,0,0,0,0c3.1,0,5,1.9,5.2,5.3c0.1,0,0.2,0.1,0.3,0.1 c1.5,0.7,2.5,1.7,3.1,3c0.8,1.8,0.9,4.7-1.5,7C17.5,22.9,15.3,23.7,12.2,23.7L12.2,23.7L12.2,23.7z M13.2,12.3c-0.2,0-0.5,0-0.7,0 c-1.8,0.1-2.9,0.9-2.9,2.1c0.1,1.2,1.4,1.8,2.7,1.7c1.2-0.1,2.8-0.5,3-3.6C14.7,12.4,13.9,12.3,13.2,12.3z"></path> </svg></a></li>
+                                <li class="sns-item"><a href=""><svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path class="st0" d="M14,10.1L22.7,0h-2.1L13,8.8L7,0H0l9.2,13.3L0,23.9h2.1l8-9.3l6.4,9.3h7L14,10.1L14,10.1z M11.1,13.4l-0.9-1.3 L2.8,1.5H6l6,8.5l0.9,1.3l7.7,11.1h-3.2L11.1,13.4L11.1,13.4z"></path> </svg></a></li>
+                                <li class="sns-item"><a href=""><svg width="24" height="18" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg"> <path d="M23.5019 3.22953C23.3646 2.72381 23.0979 2.26259 22.7281 1.8913C22.3582 1.52002 21.8981 1.25148 21.3929 1.11215C19.5108 0.599609 11.9991 0.599609 11.9991 0.599609C11.9991 0.599609 4.48749 0.59961 2.60538 1.09534C2.10048 1.24064 1.64137 1.51321 1.27208 1.88692C0.902786 2.26062 0.635691 2.72294 0.496404 3.22953C0.154519 5.13438 -0.0114253 7.06665 0.000668833 9.00191C-0.0119494 10.9372 0.153999 12.8695 0.496404 14.7743C0.633729 15.28 0.900434 15.7412 1.27024 16.1125C1.64005 16.4838 2.10021 16.7523 2.60538 16.8917C4.5043 17.4042 11.9991 17.4042 11.9991 17.4042C11.9991 17.4042 19.5108 17.4042 21.3929 16.9085C21.8988 16.7707 22.3598 16.5026 22.7299 16.1311C23.0999 15.7596 23.3661 15.2976 23.5019 14.7911C23.8448 12.8807 24.0108 10.9428 23.9976 9.00191C24.0222 7.06617 23.8561 5.13273 23.5019 3.22953ZM9.60449 12.5981V5.40572L15.8558 9.00191L9.60449 12.5981Z"></path> </svg></a></li>
+                                <li class="sns-item"><a href=""><svg width="24" height="18" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg"> <path d="M20.75 17.25H17.269V11.9769C17.269 10.5967 16.7245 9.65443 15.5272 9.65443C14.6113 9.65443 14.102 10.2903 13.8649 10.9031C13.776 11.123 13.7899 11.4294 13.7899 11.7358V17.25H10.3414C10.3414 17.25 10.3858 7.90922 10.3414 7.06015H13.7899V8.65937C13.9936 7.96013 15.0956 6.96217 16.8542 6.96217C19.0359 6.96217 20.75 8.42789 20.75 11.5841V17.25ZM6.85392 5.78557H6.8317C5.72046 5.78557 5 5.00661 5 4.01922C5 3.01263 5.74175 2.25 6.87522 2.25C8.00776 2.25 8.70414 3.01071 8.72636 4.01635C8.72636 5.00374 8.00776 5.78557 6.85392 5.78557ZM5.39726 7.06015H8.46707V17.25H5.39726V7.06015Z"></path> </svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="signup-area">
+                        <strong class="title">SIGN UP FOR OUR NEWSLETTER</strong>
+                        <div class="input-wrap">
+                            <input type="email" placeholder="Type your email here">
+                            <button type="submit" class="icon-submit"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <small class="copy">The Universe Awaits™ © 2024 GMTO Corporation</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
